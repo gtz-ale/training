@@ -1,9 +1,7 @@
-# -*- coding utf-8 -*- 
+# -*- coding utf-8 -*-
 {
     'name': 'Cooperativa'
-    
     'summary': """Training""",
-    
     'description': """
     
     Control de Cooperativa:
