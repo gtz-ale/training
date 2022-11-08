@@ -1,6 +1,6 @@
 # -*- coding utf-8 -*-
 {
-    'name': 'Cooperativa'
+    'name': 'Cooperativa',
     'summary': """Training""",
     'description': """
     
