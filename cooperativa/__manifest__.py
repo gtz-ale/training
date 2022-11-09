@@ -31,5 +31,5 @@
     'license': 'OPL-1',
     'demo': [
         'demo/cooperativa_demo.xml',
-    ]
+    ],
 }
