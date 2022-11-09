@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record model="Tareas.mcooperativa" id="erp_101">
+            <field name="ERP 101"></field>
+            <field name="description">Primer name</field> 
+            <field name="level">principiante</field>
+        </record>
+        <record model="Tareas.mcooperativa" id="accounting_200">
+            <field name="name">Accounting</field>
+            <field name="description">segundo name</field> 
+            <field name="level">avanzado</field>
+        </record>
+    </data>
+</odoo>
