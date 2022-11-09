@@ -1,6 +1,6 @@
 # -*- coding utf-8 -*-
 
-from odoo import models, fields
+from odoo import models, fields, api
 
 class Cooperativa(models.Model):
     _name = 'tareas.cooperativa'
@@ -10,7 +10,7 @@ class Cooperativa(models.Model):
     description = fields.Text(string='Descripcion de la actividad')
     
     level = fields.Selection(string='Frecuencia',
-                            slection=[('dia', 'Diaria'),
+                            selection=[('dia', 'Diaria'),
                                       ('semana', 'Semanal'),
                                       ('mes', 'Mensual')],
                              copy=False)
