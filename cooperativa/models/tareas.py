@@ -3,7 +3,7 @@
 from odoo import models, fields, api
 
 class Cooperativa(models.Model):
-    _name = 'tareas.cooperativa'
+    _name = 'tareas.tareas'
     _description = 'Odoo Ejercicio Cooperativa'
     
     name = fields.Char(string='Tarea a Realizar', required= True)
