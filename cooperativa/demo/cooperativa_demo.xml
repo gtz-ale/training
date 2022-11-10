@@ -4,21 +4,22 @@
         <record model="tasks.tareas" id="Tarea_1">
             <field name ="name">Tarea 1</field>
             <field name ="description">Descripcion tarea 2</field>
-            <field name ="frecuencia">Diario</field>
+            <!--<field name ="frecuencia">Diario</field>-->
         </record>
         
         <record model="tasks.tareas" id="Tarea_2">
             <field name ="name">Tarea 2</field>
             <field name ="description">Descripcion tarea 2</field>
-            <field name ="frecuencia">Semanal</field>
+            <!--<field name ="frecuencia">Semanal</field>-->
         </record>
         
         <record model="tasks.tareas" id="Tarea_3">
             <field name ="name">Tarea 3</field>
             <field name ="description">Descripcion tarea 3</field>
-            <field name ="frecuencia">Mensual</field>
+            <!--<field name ="frecuencia">Mensual</field>-->
         </record>
         
     </data>
 </odoo>
+
 <!-- COMENTARIO -->
