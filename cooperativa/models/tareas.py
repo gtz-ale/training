@@ -6,13 +6,13 @@ class Cooperativa(models.Model):
     _name = 'tasks.tareas'
     _description = 'Odoo Ejercicio Cooperativa'
     
-    name = fields.Char(string='Tarea a Realizar', required= True)
-    description = fields.Text(string='Descripcion de la actividad')
+    name = fields.Char(string='Nombre de la Tarea', required= True)
+    description = fields.Text(string='Descripcion')
     
-    level = fields.Selection(string='Frecuencia',
-                            selection=[('dia', 'Diaria'),
+    frecuencia = fields.Selection(string='Frecuencia',
+                            selection=[('dia', 'Diario'),
                                       ('semana', 'Semanal'),
                                       ('mes', 'Mensual')],
                              copy=False)
     
-    active = fields.Boolean(string='Active', default=True)
+    activo = fields.Boolean(string='Activo', default=True)
