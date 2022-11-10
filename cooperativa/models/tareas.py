@@ -16,3 +16,4 @@ class Cooperativa(models.Model):
                              copy=False)
     
     activo = fields.Boolean(string='Activo', default=True)
+    
