@@ -13,7 +13,6 @@ class Cooperativa(models.Model):
                             selection=[('dia', 'Diario'),
                                       ('semana', 'Semanal'),
                                       ('mes', 'Mensual')],
-                             copy=False)
     
     activo = fields.Boolean(string='Activo', default=True)
     
