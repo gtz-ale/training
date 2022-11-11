@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data noupdate="">
+    <data noupdate="1">
         <record model="tasks.tareas" id="Tarea_1">
             <field name ="name">Tarea 1</field>
             <field name ="description">Descripcion tarea 2</field>
-            <field name ="frecuencia"></field>
+            <field name ="frecuencia">dia</field>
         </record>
         
         <record model="tasks.tareas" id="Tarea_2">
             <field name ="name">Tarea 2</field>
             <field name ="description">Descripcion tarea 2</field>
-            <field name ="frecuencia"></field>
+            <field name ="frecuencia">semana</field>
         </record>
         
         <record model="tasks.tareas" id="Tarea_3">
             <field name ="name">Tarea 3</field>
             <field name ="description">Descripcion tarea 3</field>
-            <field name ="frecuencia">Mensual</field>
+            <field name ="frecuencia">mes</field>
         </record>
         
     </data>
