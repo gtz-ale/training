@@ -10,7 +10,7 @@ class Cooperativa(models.Model):
     description = fields.Text(string='Descripcion')
     
     frecuencia = fields.Selection(string='Frecuencia',
-                            Selection=[('dia', 'Diario'),('semana', 'Semanal'),('mes', 'Mensual')],
+                            selection=[('dia', 'Diario'),('semana', 'Semanal'),('mes', 'Mensual')],)
     
     activo = fields.Boolean(string='Activo', default=True)
     
