@@ -22,7 +22,7 @@
     'depends': ['base'],
     
     'data': [
-        'security/cooperativa_security.xml',
+        'security/tasks_security.xml',
         'security/ir.model.access.csv',                
     ],
         
