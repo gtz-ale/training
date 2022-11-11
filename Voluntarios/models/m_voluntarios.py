@@ -6,14 +6,14 @@ class Voluntarios(models.Model):
     _name = 'tareas.m_voluntarios'
     _description = 'Tareas a ejecutar'
 
-   # name = fields.Char(string='Tarea', required=True)
-    #description = fields.Text(string='Descripcion')
+    name = fields.Char(string='Tarea', required=True)
+    description = fields.Text(string='Descripcion')
     
-   # frecuency = fields.Selection(string='Frecuencia',
-    #                        selection=[('diaria', 'Diariamente'),
-     #                                  ('semanal', 'Semanal'),
-      #                                 ('mensual', 'Mensual')],
-       #                     copy=False)
+    frecuency = fields.Selection(string='Frecuencia',
+                           selection=[('diaria', 'Diariamente'),
+                                       ('semanal', 'Semanal'),
+                                       ('mensual', 'Mensual')],
+                            copy=False)
 
     
-   # active = fields.Boolean(string='Activo', default=True)
+ active = fields.Boolean(string='Activo', default=True)
