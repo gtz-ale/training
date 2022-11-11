@@ -12,6 +12,5 @@
         <field name="perm_unlink" eval="1"/>
         <field name="domain_force">[('active','=','True')]</field>
         <field name="model_id" ref="model_tasks_tareas"/>
-        
     </record>
 </odoo>
