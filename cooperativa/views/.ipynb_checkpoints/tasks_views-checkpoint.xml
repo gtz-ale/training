@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="cooperativa_view_form">  
+            <field name="name">cooperativa.tasks.form</field>
+            <field name="model">tasks.tareas</field>
+            <field name="arch" type="xml">
+                <form string="Cooperativa">
+                    <sheet>
+                        <h1><field name="name"/></h1>
+                            <group>
+                                <group>
+                                    <field name="active"/>
+                                </group>
+                                
+                                <group>
+                                    <field name="frecuencia"/>
+                                </group>
+                            </group>
+                                
+                        <notebook>
+                            <page string="Description">
+                                <field name="description"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record>
+            <record model="ir.ui.view" id="cooperativa_view_list">
+		        <field name="name">Cooperativa Listado</field>
+                <field name="model">tasks.tareas</field>
+                <field name="arch" type="xml">
+                    <tree string="Lista Tareas">
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="frecuencia"/>
+                    </tree>
+                </field>
+	        </record>
+        </record>
+
+        <record model="ir.ui.view" id="cooperativa_view_search">
+            <field name="name">Cooperativa Busqueda</field>
+            <field name="model">tasks.tareas</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="frecuencia"/>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>

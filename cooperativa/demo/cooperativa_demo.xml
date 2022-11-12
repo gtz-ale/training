@@ -5,24 +5,24 @@
             <field name ="name">Tarea 1</field>
             <field name ="description">Descripcion tarea 2</field>
             <field name ="frecuencia">dia</field>
-            <!--<field name="start_task"></field>-->
-            <!--<field name="end_task"></field>-->
+            <field name="start_task">Inicio 1</field>
+            <field name="end_task">Fin 1</field>
         </record>
         
         <record model="tasks.tareas" id="Tarea_2">
             <field name ="name">Tarea 2</field>
             <field name ="description">Descripcion tarea 2</field>
             <field name ="frecuencia">semana</field>
-            <!--<field name="start_task">Inicio 2</field>-->
-            <!--<field name="end_task">Fin 3</field>-->
+            <field name="start_task">Inicio 2</field>
+            <field name="end_task">Fin 2</field>
         </record>
         
         <record model="tasks.tareas" id="Tarea_3">
             <field name ="name">Tarea 3</field>
             <field name ="description">Descripcion tarea 3</field>
             <field name ="frecuencia">mes</field>
-            <!--<field name="start_task">Inicio 3</field>-->
-            <!--<field name="end_task">Fin 3</field>-->
+            <field name="start_task">Inicio 3</field>
+            <field name="end_task">Fin 3</field>
         </record>
         
     </data>

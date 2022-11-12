@@ -23,7 +23,9 @@
     
     'data': [
         'security/tasks_security.xml',
-        'security/ir.model.access.csv',                
+        'security/ir.model.access.csv',
+        'views/cooperativa_menuitems.xml',
+        'views/tasks_views.xml',
     ],
         
     'license': 'OPL-1',
