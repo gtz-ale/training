@@ -24,7 +24,7 @@
     'data': [
         'security/tasks_security.xml',
         'security/ir.model.access.csv',
-        'views/cooperativa_menuitems.xml',
+        'views/cooperativa_menuitem.xml',
         'views/tasks_views.xml',
     ],
         
