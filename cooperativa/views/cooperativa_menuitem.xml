@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="cooperativa_list_action">
+            <field name="name">Cooperativa</field>
+            <field name="res_model">tasks.tareas</field>
+            <field name="view_mode">tree,form</field>
+                <field name="help" type="html">
+                    <p class="o_view_nocontent_smiling_face">
+                        Primera Tarea
+                    </p>
+                </field>
+        </record>
+        
+        <menuitem name="Cooperativa de Voluntarios"
+                  id="menu_cooperativa"
+                  sequence="1"/>
+        
+        <menuitem id="menu_cooperativa_sub" name="Cooperativa de Voluntarios" parent="menu_cooperativa" sequence="2"/>
+        <menuitem id="menu_cooperativa_tasks" name="Tareas" parent="menu_cooperativa_sub" sequence="3"
+                  action="cooperativa_list_action"/>
+                
+    </data>
+</odoo>
