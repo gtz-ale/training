@@ -1,6 +1,6 @@
 # -*- coding utf-8 -*-
 from odoo import models, fields, api
-import time
+from datetime import timedelta
 
 class Cooperativa(models.Model):
     _name = 'tasks.tareas'
@@ -8,8 +8,8 @@ class Cooperativa(models.Model):
     
     name = fields.Char(string='Nombre de la Tarea', required= True)
     description = fields.Text(string='Descripcion')
-    start_task = fields.Datetime(string='%H:%M:%S')
-    end_task = fields.Datetime(string='%H:%M:%S')
+    #start_task = fields.Datetime.timestamp(string='%H:%M:%S')
+    #end_task = fields.Datetime.timestamp(string='%H:%M:%S')
     
     frecuencia = fields.Selection(string='Frecuencia',
                             selection=[('dia', 'Diariamente'),('semana', 'Semanal'),('mes', 'Mensual')],)
