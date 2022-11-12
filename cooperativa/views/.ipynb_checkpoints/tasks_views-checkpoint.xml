@@ -2,7 +2,7 @@
 <odoo>
     <data>
         <record model="ir.ui.view" id="cooperativa_view_form">  
-            <field name="name">cooperativa.tasks.form</field>
+            <field name="name">Cooperativa Formulario</field>
             <field name="model">tasks.tareas</field>
             <field name="arch" type="xml">
                 <form string="Cooperativa">

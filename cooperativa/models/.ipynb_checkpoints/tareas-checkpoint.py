@@ -8,9 +8,11 @@ class Cooperativa(models.Model):
     
     name = fields.Char(string='Nombre de la Tarea', required= True)
     description = fields.Text(string='Descripcion')
+    #start_task = fields.Datetime(string="Inicio Tarea")
+    #end_task = fields.Datetime(string="Fin Tarea")
     
     frecuencia = fields.Selection(string='Frecuencia',
-                            selection=[('dia', 'Diario'),('semana', 'Semanal'),('mes', 'Mensual')],)
+                            selection=[('dia', 'Diariamente'),('semana', 'Semanal'),('mes', 'Mensual')],)
     
-    activo = fields.Boolean(string='Active', default=True)
+    active = fields.Boolean(string='Activo', default=True)
     
