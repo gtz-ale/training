@@ -2,27 +2,27 @@
 <odoo>
     <data noupdate="1">
         <record model="tasks.tareas" id="Tarea_1">
-            <field name ="name">Tarea 1</field>
-            <field name ="description">Descripcion tarea 2</field>
-            <field name="start_task"></field>
-            <field name="end_task"></field>
-            <field name ="frecuencia">dia</field>
+            <field name="name">Tarea 1</field>
+            <field name="description">Descripcion tarea 2</field>
+            <field name="start_task"/>
+            <field name="end_task"/>
+            <field name="frecuencia">dia</field>
         </record>
         
         <record model="tasks.tareas" id="Tarea_2">
-            <field name ="name">Tarea 2</field>
-            <field name ="description">Descripcion tarea 2</field>
-            <field name="start_task"></field>
-            <field name="end_task"></field>
-            <field name ="frecuencia">semana</field>
+            <field name="name">Tarea 2</field>
+            <field name="description">Descripcion tarea 2</field>
+            <field name="start_task"/>
+            <field name="end_task"/>
+            <field name="frecuencia">semana</field>
         </record>
         
         <record model="tasks.tareas" id="Tarea_3">
-            <field name ="name">Tarea 3</field>
-            <field name ="description">Descripcion tarea 3</field>
-            <field name="start_task"></field>
-            <field name="end_task"></field>
-            <field name ="frecuencia">mes</field>
+            <field name="name">Tarea 3</field>
+            <field name="description">Descripcion tarea 3</field>
+            <field name="start_task"/>
+            <field name="end_task"/>
+            <field name="frecuencia">mes</field>
         </record>
         
     </data>
