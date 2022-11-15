@@ -15,8 +15,8 @@
                                 </group>
                                 
                                 <group>
-                                    <field name="status"/>
-                                    <field name="lider"/>
+                                    <!--<field name="status"/>-->
+                                   <!--<field name="lider"/>-->
                                 </group>
                             </group>
                                 
@@ -40,8 +40,8 @@
                         <field name="start_task"/>
                         <field name="end_task"/>
                         <field name="frecuencia"/>
-                        <field name="status"/>
-                        <field name="lider"/>
+                        <!--<field name="status"/>-->
+                        <!--<field name="lider"/>-->
                     </tree>
                 </field>
 	        </record>
