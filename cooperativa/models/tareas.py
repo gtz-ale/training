@@ -19,22 +19,24 @@ class Cooperativa(models.Model):
     
     active = fields.Boolean(string='Activo', default=True)
     
-    status = fields.Selection(string='Estado de la tarea',
-			   selection=[('borrador','Borrador'),
-				     ('preparado','Preparado'),
-				     ('ejecucion','En ejecucion'),
-				     ('listo','Listo')],)
-    lider = fields.Text(string='Lider de la Tarea',default='')
+    #status = fields.Selection(string='Estado de la tarea',
+	#		   selection=[('borrador','Borrador'),
+	#			     ('preparado','Preparado'),
+	#			     ('ejecucion','En ejecucion'),
+	#			     ('listo','Listo')],)
+    
+    status = fields.Char(string="Estado", default='Borrador')
+    lider = fields.Char(string="Lider", default='')
     
     @api.onchange('status', 'lider')
     def _onchange_lider(self):
-                if self.lider == None:
+                if self.lider == '':
                     raise UserError('El lider de la tarea no puede estar vacio')
             
-                self.status = fields.Selection(selection=[('listo','Listo')])
+                self.status = 'Listo'
                 
     @api.constrains('status')
     def _check_status(self):
         for record in self:
-            if record.status == None:
+            if record.status == '':
                 raise ValidationError('Debe asignar un Estado a la Tarea')
