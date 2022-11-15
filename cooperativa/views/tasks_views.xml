@@ -12,9 +12,21 @@
                                 <group>
                                     <field name="active"/>
                                 </group>
+                                <group>
+                                    <field name="active"/>
+                                </group>
+                                <group>
+                                    <field name="start_task"/>
+                                </group>
                                 
                                 <group>
-                                    <field name="frecuencia"/>
+                                    <field name="end_task"/>
+                                </group>
+                                <group>
+                                    <field name="status"/>
+                                </group>
+                                <group>
+                                    <field name="lider"/>
                                 </group>
                             </group>
                                 

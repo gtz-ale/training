@@ -12,14 +12,26 @@
                                 <group>
                                     <field name="active"/>
                                 </group>
+                                <group>
+                                    <field name="active"/>
+                                </group>
+                                <group>
+                                    <field name="start_task"/>
+                                </group>
                                 
                                 <group>
-                                    <field name="frecuencia"/>
+                                    <field name="end_task"/>
+                                </group>
+                                <group>
+                                    <field name="status"/>
+                                </group>
+                                <group>
+                                    <field name="lider"/>
                                 </group>
                             </group>
                                 
                         <notebook>
-                            <page string="Description">
+                            <page string="Descripcion">
                                 <field name="description"/>
                             </page>
                         </notebook>
@@ -28,7 +40,6 @@
             </field>
         </record>
         
-        <record>
             <record model="ir.ui.view" id="cooperativa_view_list">
 		        <field name="name">Cooperativa Listado</field>
                 <field name="model">tasks.tareas</field>
@@ -40,7 +51,6 @@
                     </tree>
                 </field>
 	        </record>
-        </record>
 
         <record model="ir.ui.view" id="cooperativa_view_search">
             <field name="name">Cooperativa Busqueda</field>
@@ -49,9 +59,9 @@
                 <search>
                     <field name="name"/>
                     <field name="description"/>
-                    <field name="frecuencia"/>
                 </search>
             </field>
         </record>
+        
     </data>
 </odoo>
