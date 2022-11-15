@@ -18,3 +18,9 @@ class Cooperativa(models.Model):
     
     active = fields.Boolean(string='Activo', default=True)
     
+    status = fields.Selection(string='Estado de la tarea',
+			   selection=[('borrador','Borrador'),
+				     ('preparado','Preparado'),
+				     ('ejecucion','En ejecucion'),
+				     ('listo','Listo')], default='borrador')
+    lider = fields.Text(string='Lider de la Tarea',default='')
