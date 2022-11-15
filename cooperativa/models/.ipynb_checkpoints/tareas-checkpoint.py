@@ -23,7 +23,7 @@ class Cooperativa(models.Model):
 			   selection=[('borrador','Borrador'),
 				     ('listo','Listo'),
 				     ('progreso','En Progreso'),
-				     ('terminado','Terminado')],)
+				     ('terminado','Terminado')], default='Borrador')
     
     #status = fields.Char(string="Estado", default='Borrador')
     lider = fields.Char(string="Lider", default='')
