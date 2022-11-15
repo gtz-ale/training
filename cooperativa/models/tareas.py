@@ -28,10 +28,10 @@ class Cooperativa(models.Model):
     status = fields.Char(string="Estado", default='Borrador')
     lider = fields.Char(string="Lider", default='')
     
-    @api.onchange('status')
+    @api.onchange('status', 'lider')
     def _onchange_status(self):
-                if self.status == 'Borrador':
-                    raise UserError('Ha cambiado el estado de la tarea.')
+                if self.lider == '':
+                    raise UserError('El lide no puede estar vacio')
             
                 self.status = 'Listo'
                 
