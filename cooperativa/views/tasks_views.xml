@@ -12,21 +12,9 @@
                                 <group>
                                     <field name="active"/>
                                 </group>
-                                <group>
-                                    <field name="active"/>
-                                </group>
-                                <group>
-                                    <field name="start_task"/>
-                                </group>
                                 
                                 <group>
-                                    <field name="end_task"/>
-                                </group>
-                                <group>
-                                    <field name="status"/>
-                                </group>
-                                <group>
-                                    <field name="lider"/>
+                                    <field name="frecuencia"/>
                                 </group>
                             </group>
                                 
@@ -47,7 +35,11 @@
                     <tree string="Lista Tareas">
                         <field name="name"/>
                         <field name="description"/>
+                        <field name="start_task"/>
+                        <field name="end_task"/>
                         <field name="frecuencia"/>
+                        <field name="status"/>
+                        <field name="lider"/>
                     </tree>
                 </field>
 	        </record>
