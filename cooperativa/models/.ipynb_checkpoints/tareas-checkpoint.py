@@ -19,13 +19,13 @@ class Cooperativa(models.Model):
     
     active = fields.Boolean(string='Activo', default=True)
     
-    #status = fields.Selection(string='Estado de la tarea',
-	#		   selection=[('borrador','Borrador'),
-	#			     ('preparado','Preparado'),
-	#			     ('ejecucion','En ejecucion'),
-	#			     ('listo','Listo')],)
+    status = fields.Selection(string='Estado de la tarea',
+			   selection=[('borrador','Borrador'),
+				     ('preparado','Preparado'),
+				     ('ejecucion','En ejecucion'),
+				     ('listo','Listo')],)
     
-    status = fields.Char(string="Estado", default='Borrador')
+    #status = fields.Char(string="Estado", default='Borrador')
     lider = fields.Char(string="Lider", default='')
     
     @api.onchange('status', 'lider')
