@@ -30,7 +30,7 @@ class Cooperativa(models.Model):
     
     @api.onchange('status', 'lider')
     def _onchange_status(self):
-                if self.lider == none:
+                if self.lider == None:
                     raise UserError('')
             
                 self.status = "Listo"
