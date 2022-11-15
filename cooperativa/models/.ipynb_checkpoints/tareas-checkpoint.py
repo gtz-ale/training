@@ -28,15 +28,15 @@ class Cooperativa(models.Model):
     status = fields.Char(string="Estado", default='Borrador')
     lider = fields.Char(string="Lider", default='')
     
-    #@api.onchange('status', 'lider')
-    #def _onchange_status(self):
-     #           if self.status == 'Borrador':
-      #              raise UserError('La Tarea ahora esta lista para su ejecucion')
+    @api.onchange('status')
+    def _onchange_status(self):
+                if self.status == 'Borrador':
+                    raise UserError('Ha cambiado el estado de la tarea.')
             
-       #         self.status = 'Listo'
+                self.status = 'Listo'
                 
-    #@api.constrains('lider')
-    #def _check_lider(self):
-     #   for record in self:
-      #      if record.lider == '':
-       #         raise ValidationError('Debe asignar un Lider a la Tarea')
+    @api.constrains('lider')
+    def _check_lider(self):
+        for record in self:
+            if record.lider == '':
+                raise ValidationError('Debe asignar un Lider a la Tarea')
