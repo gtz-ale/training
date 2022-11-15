@@ -11,10 +11,12 @@
                             <group>
                                 <group>
                                     <field name="active"/>
+                                    <field name="frecuencia"/>
                                 </group>
                                 
                                 <group>
-                                    <field name="frecuencia"/>
+                                    <field name="status" force_save="1"/>
+                                    <field name="lider"/>
                                 </group>
                             </group>
                                 

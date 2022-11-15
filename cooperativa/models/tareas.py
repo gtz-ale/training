@@ -1,6 +1,7 @@
 # -*- coding utf-8 -*-
 from odoo import models, fields, api
 from datetime import timedelta
+from odoo.exceptions import UserError, ValidationError
 
 class Cooperativa(models.Model):
     _name = 'tasks.tareas'
@@ -22,5 +23,20 @@ class Cooperativa(models.Model):
 			   selection=[('borrador','Borrador'),
 				     ('preparado','Preparado'),
 				     ('ejecucion','En ejecucion'),
-				     ('listo','Listo')], default='borrador')
+				     ('listo','Listo')],)
     lider = fields.Text(string='Lider de la Tarea',default='')
+    
+    status_change = fields.Text(string='Estado de la Tarea')
+    
+    @api.onchange('status', 'lider')
+    def _onchange_status(self):
+                if self.lider == none:
+                    raise UserError('')
+            
+                self.status = "Listo"
+                
+    @api.constrains('status')
+    def _check_status(self):
+        for record in self:
+            if record.status == none:
+                raise ValidationError('Debe asignar un Estado a la Tarea')
