@@ -31,7 +31,7 @@ class Cooperativa(models.Model):
     @api.onchange('status', 'lider')
     def _onchange_status(self):
                 if self.lider == '':
-                    raise UserError('El lide no puede estar vacio')
+                    raise UserError('El lider no puede estar vacio')
             
                 self.status = 'Listo'
                 

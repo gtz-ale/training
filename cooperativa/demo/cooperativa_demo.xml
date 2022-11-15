@@ -6,6 +6,8 @@
             <field name="description">Descripcion tarea 1</field>
             <field name="start_task">Inicio 1</field>
             <field name="end_task">Fin 1</field>
+            <field name="status"></field>
+            <field name="lider"></field>
             <field name="frecuencia">dia</field>
         </record>
         
@@ -14,6 +16,8 @@
             <field name="description">Descripcion tarea 2</field>
             <field name="start_task">Inicio 2</field>
             <field name="end_task">Fin 2</field>
+            <field name="status"></field>
+            <field name="lider"></field>
             <field name="frecuencia">semana</field>
         </record>
         
@@ -22,6 +26,8 @@
             <field name="description">Descripcion tarea 3</field>
             <field name="start_task">Inicio 3</field>
             <field name="end_task">Fin 3</field>
+            <field name="status"></field>
+            <field name="lider"></field>
             <field name="frecuencia">mes</field>
         </record>
         
