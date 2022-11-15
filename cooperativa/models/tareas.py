@@ -23,13 +23,13 @@ class Cooperativa(models.Model):
 			   selection=[('borrador','Borrador'),
 				     ('listo','Listo'),
 				     ('progreso','En Progreso'),
-				     ('terminado','Terminado')],default='borrador')
+				     ('terminado','Terminado')],)
     
     #status = fields.Char(string="Estado", default='Borrador')
     lider = fields.Char(string="Lider", default='')
     
     @api.onchange('status', 'lider')
-    def _onchange_lider(self):
+    def _onchange_status(self):
                 if self.status == 'Borrador':
                     raise UserError('La Tarea ahora esta lista para su ejecucion')
             
