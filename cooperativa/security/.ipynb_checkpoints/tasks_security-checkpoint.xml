@@ -6,10 +6,10 @@
     
     <record id="only_active_modify" model="ir.rule">
         <field name="name">Solo tareas activas pueden ser modificados</field>
-        <field name="perm_read" eval="0"/>
+        <field name="perm_read" eval="1"/>
         <field name="perm_write" eval="1"/>
-        <field name="perm_create" eval="0"/>
-        <field name="perm_unlink" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="0"/>
         <field name="domain_force">[('active','=','True')]</field>
         <field name="model_id" ref="model_tasks_tareas"/>
     </record>

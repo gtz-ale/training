@@ -1,3 +1,3 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
-cooperativa_admin,Administrador,model_tasks_tareas,group_cooperativa_admin,1,1,1,1
-cooperativa_read_all,Consulta,model_tasks_tareas,,1,0,0,0
+cooperativa_admin,Jefe de Voluntarios,model_tasks_tareas,group_cooperativa_admin,1,1,1,1
+cooperativa_edit,Voluntario,model_tasks_tareas,,1,1,1,0
