@@ -30,12 +30,12 @@ class Cooperativa(models.Model):
     
     @api.onchange('status', 'lider')
     def _onchange_status(self):
-        if self.status == 'Borrador':
-            raise UserError('La Tarea ahora esta lista para su ejecucion')
-        self.status = 'listo'
+        if self.lider == '':
+            raise UserError('El lider no puede estar vacio')
+        self.status = 'Listo'
                 
     @api.constrains('lider')
     def _check_lider(self):
         for record in self:
-            if record.lider == '':
-                raise ValidationError('Debe asignar un Lider a la Tarea')
+            if record.lider != "":
+                raise ValidationError('La tarea esta lista para su ejeucion')
