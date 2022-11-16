@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id="group_cooperativa_admin" model="res.groups">
-        <field name="name">Cooperativa /Admin</field>    
+        <field name="name">Cooperativa / Administrador</field>    
     </record>
+    
+    <record id="group_cooperativa_user" model="res.groups">
+        <field name="name">Cooperativa / Editor</field>    
+    </record>
+    
     
     <record id="only_active_modify" model="ir.rule">
         <field name="name">Solo tareas activas pueden ser modificados</field>
