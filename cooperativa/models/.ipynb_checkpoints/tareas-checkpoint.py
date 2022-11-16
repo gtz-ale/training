@@ -25,7 +25,7 @@ class Cooperativa(models.Model):
 	#			     ('progreso','En Progreso'),
 	#			     ('terminado','Terminado')], default='Borrador')
     
-    status = fields.Char(string="Estado", default='Borrador')
+    status = fields.Char(default='Borrador')
     lider = fields.Char(string="Lider")
     
     @api.onchange('status', 'lider')
