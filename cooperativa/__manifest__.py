@@ -26,6 +26,7 @@
         'security/ir.model.access.csv',
         'views/cooperativa_menuitem.xml',
         'views/tasks_views.xml',
+        'views/session_views.xml',
     ],
         
     'license': 'OPL-1',

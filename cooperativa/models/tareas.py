@@ -28,6 +28,12 @@ class Cooperativa(models.Model):
     status = fields.Char(default='Borrador')
     lider = fields.Char(string="Lider")
     
+    
+    sessions_ids = fields.One2many(comodel_name='cooperativa.session',
+                                  inverse_name='cooperativa_id',
+                                  string='Sesion')
+    
+    
     @api.onchange('status', 'lider')
     def _onchange_status(self):
         if self.lider == '':
