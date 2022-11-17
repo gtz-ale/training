@@ -10,7 +10,7 @@ class Session(models.Model):
                                     ondelete='cascade',
                                     required=True)
     
-    name = fields.Char(strins='Title', related='cooperativa_id.name')
+    name = fields.Char(string='Title', related='cooperativa_id.name')
     
-    lider_id = fields.Many2one(comodel_name='res.parner', string='Lider')
-    voluntario_id = fields.Many2many(comodel_name='res.parner', string='Voluntario')
+    lider_id = fields.Many2one(comodel_name='res.partner', string='Lider')
+    voluntario_id = fields.Many2many(comodel_name='res.partner', string='Voluntario')
