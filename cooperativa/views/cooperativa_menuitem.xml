@@ -29,10 +29,9 @@
         
         <menuitem id="menu_cooperativa_sub" name="Opciones" parent="menu_cooperativa" sequence="2"/>
         <menuitem id="menu_cooperativa_tasks" name="Tareas" parent="menu_cooperativa_sub" sequence="3" 
-                  action="cooperativa_list_action"/>
-        
+                  action="cooperativa_list_action"/>        
         <menuitem id="menu_cooperativa_session" name="Sesiones" parent="menu_cooperativa_sub" sequence="4" 
-                  action="cooperativa_list_action"/>
+                  action="session_list_action"/>
                 
     </data>
 </odoo>

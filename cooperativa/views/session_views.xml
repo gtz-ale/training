@@ -12,7 +12,6 @@
                             <group>
                                 <field name="cooperativa_id"/>
                             </group>
-                            
                             <group>
                                 <field name="lider_id"/>
                             </group>

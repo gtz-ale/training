@@ -13,4 +13,4 @@ class Session(models.Model):
     name = fields.Char(string='Title', related='cooperativa_id.name')
     
     lider_id = fields.Many2one(comodel_name='res.partner', string='Lider')
-    voluntario_id = fields.Many2many(comodel_name='res.partner', string='Voluntario')
+    voluntario_id = fields.Many2many(comodel_name='res.partner', string='Lider')
