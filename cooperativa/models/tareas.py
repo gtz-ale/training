@@ -29,7 +29,7 @@ class Cooperativa(models.Model):
     lider = fields.Char(string="Lider")
     
     
-    sessions_ids = fields.One2many(comodel_name='cooperativa.session',
+    session_ids = fields.One2many(comodel_name='cooperativa.session',
                                   inverse_name='cooperativa_id',
                                   string='Sesion')
     

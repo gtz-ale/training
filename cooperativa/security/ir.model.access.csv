@@ -1,5 +1,5 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 cooperativa_admin,Jefe de Voluntarios,model_tasks_tareas,group_cooperativa_admin,1,1,1,1
 cooperativa_user,Voluntario,model_tasks_tareas,,1,1,1,0
-session_cooperativa,Administrador Sesio,_model_cooperativa_sesion,group_cooperativa_admin,1,1,1,1
-session_user,Usuario,_model_cooperativa_session,,1,0,0,0
+session_cooperativa,Sesion Administrador,model_cooperativa_session,group_cooperativa_admin,1,1,1,1
+session_user,Sesion Usuario,model_cooperativa_session,,1,0,0,0

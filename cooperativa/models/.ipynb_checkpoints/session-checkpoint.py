@@ -2,7 +2,7 @@
 from odoo import models, fields, api
 
 class Session(models.Model):
-    _name = 'cooperativa_session'
+    _name = 'cooperativa.session'
     _description = 'Informacion de la sesion'
     
     cooperativa_id = fields.Many2one(comodel_name='tasks.tareas',
@@ -13,4 +13,4 @@ class Session(models.Model):
     name = fields.Char(strins='Title', related='cooperativa_id.name')
     
     lider_id = fields.Many2one(comodel_name='res.parner', string='Lider')
-    voluntario_ids = fields.Many2many(comodel_name='res.parner', string='Voluntario')
+    voluntario_id = fields.Many2many(comodel_name='res.parner', string='Voluntario')

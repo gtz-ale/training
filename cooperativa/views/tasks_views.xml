@@ -17,7 +17,6 @@
                                     <field name="end_task"/>
                                 </group>
                             </group>
-                                
                         <notebook>
                             <page string="Descripcion">
                                 <field name="description"/>
