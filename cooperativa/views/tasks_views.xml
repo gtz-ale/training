@@ -52,5 +52,16 @@
             </field>
         </record>
         
+        <record model="ir.ui.view" id="cooperativa_view_pivot">
+            <field name="name">Cooperativa Pivote</field>
+            <field name="model">tasks.tareas</field>
+            <field name="arch" type="xml">
+                <pivot>
+                    <field name="frecuencia"/>
+                    <field name="name"/>
+                </pivot>
+            </field>
+        </record>
+              
     </data>
 </odoo>

@@ -1,5 +1,6 @@
 # -*- coding utf-8 -*-
 from odoo import models, fields, api
+from datetime import timedelta
 
 class Session(models.Model):
     _name = 'cooperativa.session'
@@ -14,3 +15,30 @@ class Session(models.Model):
     
     lider_id = fields.Many2one(comodel_name='res.partner', string='Lider')
     voluntario_id = fields.Many2many(comodel_name='res.partner', string='Voluntario')
+
+    start_time = fields.Date(string = 'Tiempo Inicio',
+                            default = fields.Date.today)
+    
+    duration = fields.Integer(string ='Tiempo Inicio',
+                            default=1)
+    
+    end_time = fields.Date(string='Tiempo Fin',
+                             compute='_compute_end_date',
+                             inverse='_inverse_end_date',
+                             store=True)
+    
+    @api.depends('start_time','duration')
+    def _compute_end_date(self):
+        for record in self:
+            if not (record.start_time and record.duration):
+                record.end_time = record.start_time
+            else:
+                duration = timedelta(days=record.duration)
+                record.end_time = record.start_time + duration
+                
+    def _inverse_end_date(self):
+        for record in self:
+            if record.start_time and record.end_time:
+                record.duration = (record.end_time - record.start_time).days +1
+            else:
+                continue
